@@ -142,14 +142,14 @@
                     },
                     {
                         "programDescription": "This is for beginner coders",
-                        "programName": "postmanGlaxyonehundred",
+                        "programName": "postmanGalaxyThousand",
                         "programStatus": "Inactive",
                         "Endpoint": "saveprogram",
                         "statusCode": 201
                     },
                     {
                         "programDescription": "This is for intermediate coders",
-                        "programName": "postmanGlaxyonehundredone",
+                        "programName": "postmanGalaxyThousandone",
                         "programStatus": "Inactive",
                         "Endpoint": "saveprogram",
                         "statusCode": 201
@@ -189,7 +189,7 @@
                     
                     {
                         "programDescription": "This is testone program",
-                        "programName": "postmanGalaxyonehundred",
+                        "programName": "postmanGalaxyThousand",
                         "programStatus": "Active",
                         "Endpoint": "putprogram/{{programId}}",
                         "statusCode": 200
@@ -264,7 +264,7 @@
                     },
                     {
                         "programDescription": "This is test program by program name",
-                        "programName": "postmanGlaxyonehundredone",
+                        "programName": "postmanGalaxyThousandone",
                         "programStatus": "Active",
                         "Endpoint": "program/{{programName}}",
                         "statusCode": 200
@@ -313,14 +313,14 @@
               "StatusCode": 400
                 },
                                 {
-              "batchName": "postmanglaxyBatchonehundred",
+              "batchName": "postmanGalaxyBatchThousand",
               "batchStatus": "Active",
               "batchNoOfClasses":"1",
               "EndPoint": "batches",
               "StatusCode": 201
                 },
                 {
-              "batchName": "postmanglaxyBatchonehundredone",
+              "batchName": "postmanGalaxyBatchThousandone",
               "batchStatus": "Active",
               "batchNoOfClasses":"1",
               "EndPoint": "batches",
@@ -393,7 +393,7 @@
                       "StatusCode": 400
                         },
                        {
-                      "batchName": "postmanglaxyBatchonehundred",
+                      "batchName": "postmanGalaxyBatchThousand",
                       "batchStatus": "Active",
                       "batchNoOfClasses":"3",
                       "EndPoint": "batches",
@@ -541,7 +541,7 @@
                                                                                                                                                                                                                                 "classNo": 2,
                                                                                                                                                                                                                                 "classNotes": "Java",
                                                                                                                                                                                                                                 "classStaffId": "U49",
-                                                                                                                                                                                                                                "classTopic": "PostmanGlaxyClasshundred",
+                                                                                                                                                                                                                                "classTopic": "postmanGalaxyClassThousand",
                                                                                                                                                                                                                                 "classScheduledDates1": "2024-12-09T15:11:08.750Z",
                                                                                                                                                                                                                 "classScheduledDates2": "2024-12-10T15:11:08.750Z",
                                                                                                                                                                                                                 "Endpoint": "CreateClassSchedule",
@@ -557,6 +557,11 @@
                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                     "Endpoint": "allClasses" ,
                                                                                                                                                                                                                                                     "statusCode": 200
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "alClasses" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
                                                                                                                                                                                                                                                 }
                                                                                                                                                                                                                                             ]
                                                                                                                                                                                                                           },
@@ -703,7 +708,11 @@
                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                     "Endpoint": "upcomingClasses/{{studentId}}" ,
                                                                                                                                                                                                                                                     "statusCode": 200
-                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                    },{
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                        "Endpoint": "ucomingClasses/{{studentId}}" ,
+                                                                                                                                                                                                                                                        "statusCode": 404
+                                                                                                                                                                                                                                                        }
                                                                                                                                                                                                                                                     ]
                                                                                                                                                                                                                                                 },
     
@@ -717,17 +726,33 @@
                                                                                                                                                                                                                                                 "classDate": "2024-12-09",
                                                                                                                                                                                                                                                 "classDescription": "Java topics going on",
                                                                                                                                                                                                                                                 "classNo": 2,
-                                                                                                                                                                                                                                                "classNotes": "Salesforcepoweri",
+                                                                                                                                                                                                                                                "classNotes": "Salesforcepowersi",
                                                                                                                                                                                                                                                 "classStaffId": "U49",
                                                                                                                                                                                                                                                 "classTopic": "PostmanGalaxyClasshundred",
                                                                                                                                                                                                                                                 "classScheduledDates1": "2024-12-09T15:11:08.750Z",
                                                                                                                                                                                                                                 "classScheduledDates2": "2024-12-10T15:11:08.750Z",
                                                                                                                                                                                                                                 "Endpoint": "updateClass/{{classId}}",
-                                                                                                                                                                                                                                "statusCode": 201
+                                                                                                                                                                                                                                "statusCode": 200
                                                                                                                                                                                                                                                
                                                                                                                                                                                                                                         
                                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "classComments": "Java Opps",
+                                                                                                                                                                                                                                            "classDate": "2024-12-09",
+                                                                                                                                                                                                                                            "classDescription": "Java topics going on",
+                                                                                                                                                                                                                                            "classNo": 2,
+                                                                                                                                                                                                                                            "classNotes": "Salesforcepowersili",
+                                                                                                                                                                                                                                            "classStaffId": "U49",
+                                                                                                                                                                                                                                            "classTopic": "PostmanGalaxyClasshundre",
+                                                                                                                                                                                                                                            "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                                                                                                                                                            "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                                                                                                                                                            "Endpoint": "udateClass/{{classId}}",
+                                                                                                                                                                                                                            "statusCode": 404
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                        }
                                                                                                                                                                                                                                         ]
                                                                                                                                                                                                                                     },
                                                                                                                                                                                                                                     {
@@ -736,8 +761,13 @@
                                                                                                                                                                                                                                             {
                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                 "Endpoint": "updateClassrecording/{{classId}}",
-                                                                                                                                                                                                                                "statusCode": 201
-                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                "statusCode": 200
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                "Endpoint": "udateClassrecording/{{classId}}",
+                                                                                                                                                                                                                                                "statusCode": 404
+                                                                                                                                                                                                                                                            }
                                                                                                                                                                                                                                         ]
                                                                                                                                                                                                                                     },
                                                                                                                                                                                                                                     {
@@ -747,25 +777,14 @@
                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                 "Endpoint": "deleteByClass/{{classId}}",
                                                                                                                                                                                                                                 "statusCode": 200
-                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                        ]
-                                                                                                                                                                                                                                    },                                                                                                                                                                               {
-                                                                                                                                                                                                                                        "name": "DeleteProgramByProgramName",
-                                                                                                                                                                                                                                        "data": [
-                                                                                                                                                                                                                                            {
-                                                                                                                                                                                                                                                "Endpoint": "deletebyprogid/{{InvalidPName}}",
-                                                                                                                                                                                                                                                "statusCode": 404
                                                                                                                                                                                                                                             },
                                                                                                                                                                                                                                             {
-                                                                                                                                                                                                                                                "Endpoint": "deletebyprogame/{{programName}}",
+                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                "Endpoint": "delteByClass/{{classId}}",
                                                                                                                                                                                                                                                 "statusCode": 404
-                                                                                                                                                                                                                                            },
-                                                                                                                                                                                                                                            {
-                                                                                                                                                                                                                                                "Endpoint": "deletebyprogname/{{programName}}",
-                                                                                                                                                                                                                                                "statusCode": 200
-                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                            }
                                                                                                                                                                                                                                         ]
-                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    },  
                                                                                                                                                                                                                                     {
                                                                                                                                                                                                                                         "name":"Get All Users",
                                                                                                                                                                                                                                         "data":[
@@ -849,6 +868,32 @@
                                                                                                                                                                                                                                             }				
                                                                                                                                                                                                                                                 ]
                                                                                                                                                                                                                                         },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "Delete Batch2ID delete_DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    "Endpoint": "batches/",
+                                                                                                                                                                                                                                                    "statusCode": 200
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "DeleteProgramByProgramName",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    "Endpoint": "deletebyprogid/{{InvalidPName}}",
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    "Endpoint": "deletebyprogame/{{programName}}",
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    "Endpoint": "deletebyprogname/{{programName}}",
+                                                                                                                                                                                                                                                    "statusCode": 200
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
                                                                                                                                                                                                                                     {
                                                                                                                                                                                                                                         "name": "DDH User Logout",
                                                                                                                                                                                                                                         "data": [
@@ -867,7 +912,8 @@
                                                                                                                                                                                                                                             {
                                                                                                                                                                                                                                                 "status": 200,
                                                                                                                                                                                                                                                  "endpoint": "logoutlms"
-                                                                                                                                                                                                                                            }               ]
+                                                                                                                                                                                                                                            }              
+                                                                                                                                                                                                                                         ]
                                                                                                                                                                                                                                     }
                                                                                                                                                                                                                                 ]
                                                                                                                                                                                                                             }
