@@ -1,0 +1,875 @@
+[
+    {
+        "requests": [
+            {
+                "name": "DDH User Login",
+                "data": [
+                    
+                    {
+                        "userLogin_EmailId1": "sdet@gmail.com",
+                        "password1": "LmsHackathon@2024",
+                        "status": 404,
+                        "endpoint": "lin" 
+                    },
+                    {
+                        "userLogin_EmailId1": "wrongemail@gmail.com",
+                        "password1": "LmsHackathon@2024",
+                        "status": 400,
+                        "endpoint": "login"    
+                    },
+                    {
+                        "userLogin_EmailId1": "sdet@gmail.com",
+                        "password1": "WrongPassword@2024",
+                        "status": 401,
+                        "endpoint": "login"    
+                    },
+                    {
+                        "userLogin_EmailId1": "",
+                        "password1": "",
+                        "status": 400,
+                        "endpoint": "login"    
+                    },
+                    {
+                        "userLogin_EmailId1": "sdet@gmail.com",
+                        "password1": "LmsHackathon@2024",
+                        "status": 405,
+                        "endpoint": "login"    
+                    },
+                    {
+                        "userLogin_EmailId1": "",
+                        "password1": "LmsHackathon@2024",
+                        "status": 400,
+                        "endpoint": "login"    
+                    },
+                    {
+                        "userLogin_EmailId1": "sdet@gmail.com",
+                        "password1": "",
+                        "status": 400,
+                        "endpoint": "login"    
+                    },
+                    {
+                        "userLogin_EmailId1": "sdet@gmail.com",
+                        "password1": "LmsHackathon@2024",
+                        "status": 200,
+                        "endpoint": "login"    
+                    }
+                ]
+            },
+            {
+                "name": "AddNewProgram",
+                "data": [
+                    {
+                        "programDescription": "GGGH",
+                        "programName": "Cheeepma",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "GGGH",
+                        "programName": "256536",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "GGGH",
+                        "programName": "@#$",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "GGGH",
+                        "programName": "a@p@",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "GGGH",
+                        "programName": "amw",
+                        "programStatus": "",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "@cvgh",
+                        "programName": "alp",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "123456",
+                        "programName": "alp",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "",
+                        "programName": "",
+                        "programStatus": "",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "zxcv",
+                        "programName": "",
+                        "programStatus": "",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "zxcv",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "zxcvone",
+                        "programName": "ZZZCV",
+                        "programStatus": "Active",
+                        "Endpoint": "saveprogrm",
+                        "statusCode": 404
+                    },
+                    {
+                        "programDescription": "zxcv",
+                        "programName": "cvbnm",
+                        "programStatus": "NULL",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 500
+                    },
+                    {
+                        "programDescription": "This is for beginner coders",
+                        "programName": "postmanGlaxyonehundred",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 201
+                    },
+                    {
+                        "programDescription": "This is for intermediate coders",
+                        "programName": "postmanGlaxyonehundredone",
+                        "programStatus": "Inactive",
+                        "Endpoint": "saveprogram",
+                        "statusCode": 201
+                    }
+                ]
+            },
+            {
+                "name": "UpdateProgramById",
+                "data": [
+                    
+                    {
+                        "programDescription": "This is test program",
+                         "programName": "CFTHJ",
+                        "Endpoint": "putprogram/{{programId}}",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "This is test program",
+                         "programStatus": "Inactive",
+                        "Endpoint": "putprogram/{{programId}}",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "This is test program",
+                        "programName": "CFTHJ",
+                         "programStatus": "Inactive",
+                        "Endpoint": "putprogram/{{InvalidProgramId}}",
+                        "statusCode": 404
+                    },
+                    {
+                        "programDescription": "This is test program",
+                        "programName": "CFTHJ",
+                         "programStatus": "Inactive",
+                        "Endpoint": "putprogrm/{{programId}}",
+                        "statusCode": 404
+                    },
+                    
+                    {
+                        "programDescription": "This is testone program",
+                        "programName": "postmanGalaxyonehundred",
+                        "programStatus": "Active",
+                        "Endpoint": "putprogram/{{programId}}",
+                        "statusCode": 200
+                    }
+                ]
+            },       
+                        {
+                "name": "GetAllPrograms",
+                "data": [
+                    {
+                        "Endpoint": "allProgram",
+                        "statusCode": 404
+                    },
+                    {
+                        "Endpoint": "allPrograms",
+                        "statusCode": 200
+                    }
+                ]
+            },
+            {
+                "name": "GetAllProgramsWithUsers",
+                "data": [
+                    {
+                        "Endpoint": "allProgramsWithUser",
+                        "statusCode": 404
+                    },
+                    {
+                        "Endpoint": "allProgramsWithUsers",
+                        "statusCode": 200
+                    }
+                ]
+            },
+            {
+                "name": "GetProgramWithId",
+                "data": [
+                    {
+                        "Endpoint": "program/{{programId}}",
+                        "statusCode": 404
+                    },
+                    {
+                        "Endpoint": "programs/{{InvalidPID}}",
+                        "statusCode": 404
+                    },
+                    {
+                        "Endpoint": "programs/{{programId}}",
+                        "statusCode": 200
+                    }
+                ]
+            },
+           
+            {
+                "name": "UpdateProgramByProgramName",
+                "data": [
+                    {
+                        "programDescription": "This is test program",
+                        "programName": "postmanGalaxyonehundredone",
+                        "programStatus": "Active",
+                        "Endpoint": "progra/{{programName}}",
+                        "statusCode": 404
+                    },
+                    {
+                        "programDescription": "This is test program",
+                        "programName": "PostmanGalaxytesttwo",
+                        "Endpoint": "program/{{programName}}",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "This is test program",
+                        "programStatus": "Inactive",
+                        "Endpoint": "program/{{programName}}",
+                        "statusCode": 400
+                    },
+                    {
+                        "programDescription": "This is test program by program name",
+                        "programName": "postmanGlaxyonehundredone",
+                        "programStatus": "Active",
+                        "Endpoint": "program/{{programName}}",
+                        "statusCode": 200
+                    }
+                ]
+            },
+            {
+                "name": "DeleteProgramById",
+                "data": [
+                    {
+                        "Endpoint": "deletebyprogid/{{InvalidPID}}",
+                        "statusCode": 404
+                    },
+                    {
+                        "Endpoint": "deletebyprogi/{{programId}}",
+                        "statusCode": 404
+                    },
+                    {
+                        "Endpoint": "deletebyprogid/{{programId}}",
+                        "statusCode": 200
+                    }
+                ]
+            },
+            {
+                "name":"Create new batch_DD",
+                "data":[
+                {
+              "batchName": "1234",
+              "batchStatus": "Active",
+              "batchNoOfClasses": 1,
+              "EndPoint": "batches",
+              "StatusCode": 400
+                },
+                {
+              "batchName": "PostmanGlaxyBatchFour",
+              "batchStatus": "123",
+              "batchNoOfClasses": 1,
+              "EndPoint": "batches",
+              "StatusCode": 400
+                },
+                {
+              "batchName": "PostmanGalxyBatchFour",
+              "batchStatus": "Active",
+              "batchNoOfClasses":"ABC",
+              "EndPoint": "batches",
+              "StatusCode": 400
+                },
+                                {
+              "batchName": "postmanglaxyBatchonehundred",
+              "batchStatus": "Active",
+              "batchNoOfClasses":"1",
+              "EndPoint": "batches",
+              "StatusCode": 201
+                },
+                {
+              "batchName": "postmanglaxyBatchonehundredone",
+              "batchStatus": "Active",
+              "batchNoOfClasses":"1",
+              "EndPoint": "batches",
+              "StatusCode": 201
+                }
+                            ]
+                    },
+                    {
+                        "name": "Get All Batches_DD",
+                        "data": [
+                            {
+                                "Endpoint": "batches",
+                                "statusCode": 200
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Get Batch by BatchID_DD",
+                        "data": [
+                            {
+                                "Endpoint": "batches/batchId/",
+                                "statusCode": 404
+                            },
+                            {
+                                "Endpoint": "batches/batchId/",
+                                "statusCode": 200
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Get Batch by Program ID_DD",
+                        "data": [
+                            {
+                                "Endpoint": "batches/program/",
+                                "statusCode": 200
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Get Batch Name_DD",
+                        "data": [
+                            {
+                                "Endpoint": "batches/batchName/",
+                                "statusCode": 200
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Update valid Mandatory fields_DD",
+                        "data":[
+                         {
+                      "batchName": "@#$",
+                      "batchStatus": "Active",
+                      "batchNoOfClasses":"1",
+                      "EndPoint": "batches",
+                      "StatusCode": 400
+                        },
+                         {
+                      "batchName": "UpdatedPostmanGalaxyBatchTestOneEight",
+                      "batchStatus": "@#",
+                      "batchNoOfClasses":"1",
+                      "EndPoint": "batches",
+                      "StatusCode": 400
+                        },
+                         {
+                      "batchName": "UpdatedPostmanGalaxyBatchTestOneFive",
+                      "batchStatus": "Active",
+                      "batchNoOfClasses":"@#",
+                      "EndPoint": "batches",
+                      "StatusCode": 400
+                        },
+                       {
+                      "batchName": "postmanglaxyBatchonehundred",
+                      "batchStatus": "Active",
+                      "batchNoOfClasses":"3",
+                      "EndPoint": "batches",
+                      "StatusCode": 200
+                        }
+                    ]
+                },
+                {
+                    "name": "Valid Batch ID delete_DD",
+                    "data": [
+                        {
+                            "Endpoint": "batches/",
+                            "statusCode": 200
+                        }
+                    ]
+                },
+
+                {
+                    "name": "CreateNewClass DD Copy 2",
+                    "data": [
+                        {
+        "classComments": "123",
+        "classDate": "2024-12-09",
+        "classDescription": "Java topics going on",
+        "classNo": 2,
+        "classNotes": "Java",
+        "classStaffId": "U49",
+        "classTopic": "supe_keywortwo",
+        "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+            "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+            "Endpoint": "CreateClassSchedule",
+                            "statusCode": 400
+                            },
+                  {
+                     "classComments": "@#$$",
+                     "classDate": "2024-12-09",
+                                "classDescription": "Java topics going on",
+                                "classNo": 2,
+                                "classNotes": "Java",
+                                "classStaffId": "U49",
+                                "classTopic": "supe_keywortwo",
+                                "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                    "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                    "Endpoint": "CreateClassSchedule",
+                                                    "statusCode": 400
+                                                    },
+                                                    {
+                                                        "classComments": "abc",
+                                                        "classDate": "",
+                                                        "classDescription": "Java topics going on",
+                                                        "classNo": 2,
+                                                        "classNotes": "Java",
+                                                        "classStaffId": "U49",
+                                                        "classTopic": "supe_keywortwo",
+                                                        "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                            "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                            "Endpoint": "CreateClassSchedule",
+                                                                            "statusCode": 400
+                                                                            },
+                                                                            {
+                                                                                "classComments": "abc",
+                                                                                "classDate": "2024-12-09",
+                                                                                "classDescription": "!@#$%",
+                                                                                "classNo": 2,
+                                                                                "classNotes": "Java",
+                                                                                "classStaffId": "U49",
+                                                                                "classTopic": "supe_keywortwo",
+                                                                                "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                    "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                    "Endpoint": "CreateClassSchedule",
+                                                                                                    "statusCode": 400
+                                                                                                    },
+                                                                                                   
+                                                                                                    
+                                                                                                    {
+                                                                                                        "classComments": "abc",
+                                                                                                        "classDate": "2024-12-09",
+                                                                                                        "classDescription": "ABC",
+                                                                                                        "classNo": -1,
+                                                                                                        "classNotes": "Java",
+                                                                                                        "classStaffId": "U49",
+                                                                                                        "classTopic": "supe_keywortwo",
+                                                                                                        "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                                            "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                                            "Endpoint": "CreateClassSchedule",
+                                                                                                                            "statusCode": 400
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "classComments": "abc",
+                                                                                                                                "classDate": "2024-12-09",
+                                                                                                                                "classDescription": "ABC",
+                                                                                                                                "classNo": "two",
+                                                                                                                                "classNotes": "Java",
+                                                                                                                                "classStaffId": "U49",
+                                                                                                                                "classTopic": "supe_keywortwo",
+                                                                                                                                "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                                                                    "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                                                                    "Endpoint": "CreateClassSchedule",
+                                                                                                                                                    "statusCode": 400
+                                                                                                                                                    },
+                                                                                                                                                    
+                                                                                                                                                    {
+                                                                                                                                                        "classComments": "abc",
+                                                                                                                                                        "classDate": "2024-12-09",
+                                                                                                                                                        "classDescription": "ABC",
+                                                                                                                                                        "classNo": 1,
+                                                                                                                                                        "classNotes": "JAVA",
+                                                                                                                                                        "classStaffId": "@#$%",
+                                                                                                                                                        "classTopic": "supe_keywortwo",
+                                                                                                                                                        "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                                                                                            "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                                                                                            "Endpoint": "CreateClassSchedule",
+                                                                                                                                                                            "statusCode": 404
+                                                                                                                                                                            },
+                                                                                                                                                                            {
+                                                                                                                                                                                "classComments": "abc",
+                                                                                                                                                                                "classDate": "2024-12-09",
+                                                                                                                                                                                "classDescription": "ABC",
+                                                                                                                                                                                "classNo": 1,
+                                                                                                                                                                                "classNotes": "JAVA",
+                                                                                                                                                                                "classStaffId": "@#$%",
+                                                                                                                                                                                "classTopic": "",
+                                                                                                                                                                                "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                                                                                                                    "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                                                                                                                    "Endpoint": "CreateClassSchedule",
+                                                                                                                                                                                                    "statusCode": 400
+                                                                                                                                                                                                    },
+                                                                                                                                                                                                    {
+                                                                                                                                                                                                        "classComments": "abc",
+                                                                                                                                                                                                        "classDate": "2024-12-09",
+                                                                                                                                                                                                        "classDescription": "ABC",
+                                                                                                                                                                                                        "classNo": 1,
+                                                                                                                                                                                                        "classNotes": "JAVA",
+                                                                                                                                                                                                        "classStaffId": "@#$%",
+                                                                                                                                                                                                        "classTopic": "",
+                                                                                                                                                                                                        "classScheduledDates1": "",
+                                                                                                                                                                                                            "classScheduledDates2": "",
+                                                                                                                                                                                                            "Endpoint": "CreateClassSchedule",
+                                                                                                                                                                                                                            "statusCode": 400
+                                                                                                                                                                                                                            }, 
+                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                "classComments": "Java Opps",
+                                                                                                                                                                                                                                "classDate": "2024-12-09",
+                                                                                                                                                                                                                                "classDescription": "Java topics going on",
+                                                                                                                                                                                                                                "classNo": 2,
+                                                                                                                                                                                                                                "classNotes": "Java",
+                                                                                                                                                                                                                                "classStaffId": "U49",
+                                                                                                                                                                                                                                "classTopic": "PostmanGlaxyClasshundred",
+                                                                                                                                                                                                                                "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                                                                                                                                                "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                                                                                                                                                "Endpoint": "CreateClassSchedule",
+                                                                                                                                                                                                                "statusCode": 201
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetAllClassesDD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "allClasses" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "Get Class details byID DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "class/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "clas/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 404                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetClassRecordingById DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "batchRecordings/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+    
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                    "Endpoint": "batchRecording/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetClassByClassTopicDD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "classes/{{classTopic}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+    
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                    "Endpoint": "classe/{{classTopic}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetAllClassesByBatchIdDD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "classesbyBatch/{{batch3_Id}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+    
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                    "Endpoint": "classebyBatch/{{batch3_Id}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetAllClassesByStaffId DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "classesByStaff/{{classStaffId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+    
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                    "Endpoint": "classeByStaff/{{classStaffId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetAllRecordings DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "classrecordings" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+    
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                    "Endpoint": "clasrecordings" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetAllRecordingswithClassId DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "classRecordings/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+    
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                    "Endpoint": "clasRecordings/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetAllRecordingwithClassIdDownload DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "download/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+    
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                    "Endpoint": "dowload/{{classId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 404
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "GetallClassForStudendId",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    "Endpoint": "upcomingClasses/{{studentId}}" ,
+                                                                                                                                                                                                                                                    "statusCode": 200
+                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                                },
+    
+                                                                                              
+                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "name": "UpdateNewClass DD",
+                                                                                                                                                                                                                                            "data": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    "classComments": "Java Opps",
+                                                                                                                                                                                                                                                "classDate": "2024-12-09",
+                                                                                                                                                                                                                                                "classDescription": "Java topics going on",
+                                                                                                                                                                                                                                                "classNo": 2,
+                                                                                                                                                                                                                                                "classNotes": "Salesforcepoweri",
+                                                                                                                                                                                                                                                "classStaffId": "U49",
+                                                                                                                                                                                                                                                "classTopic": "PostmanGalaxyClasshundred",
+                                                                                                                                                                                                                                                "classScheduledDates1": "2024-12-09T15:11:08.750Z",
+                                                                                                                                                                                                                                "classScheduledDates2": "2024-12-10T15:11:08.750Z",
+                                                                                                                                                                                                                                "Endpoint": "updateClass/{{classId}}",
+                                                                                                                                                                                                                                "statusCode": 201
+                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                        ]
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "name": "UpdateClassRecordingPath DD",
+                                                                                                                                                                                                                                        "data": [
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                "Endpoint": "updateClassrecording/{{classId}}",
+                                                                                                                                                                                                                                "statusCode": 201
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                        ]
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "name": "DeleteClassById DD",
+                                                                                                                                                                                                                                        "data": [
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                "Endpoint": "deleteByClass/{{classId}}",
+                                                                                                                                                                                                                                "statusCode": 200
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                        ]
+                                                                                                                                                                                                                                    },                                                                                                                                                                               {
+                                                                                                                                                                                                                                        "name": "DeleteProgramByProgramName",
+                                                                                                                                                                                                                                        "data": [
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "Endpoint": "deletebyprogid/{{InvalidPName}}",
+                                                                                                                                                                                                                                                "statusCode": 404
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "Endpoint": "deletebyprogame/{{programName}}",
+                                                                                                                                                                                                                                                "statusCode": 404
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "Endpoint": "deletebyprogname/{{programName}}",
+                                                                                                                                                                                                                                                "statusCode": 200
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                        ]
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "name":"Get All Users",
+                                                                                                                                                                                                                                        "data":[
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap",
+                                                                                                                                                                                                                                                "statusCode": "200"
+                                                                                                                                                                                                                                            }								
+                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {		
+                                                                                                                                                                                                                                        "name":"Get by UserId",
+                                                                                                                                                                                                                                        "data":[
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/UABC731",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/@#$%%",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/12345",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/U10",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/abc-@#$12345",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/{{userId}}",
+                                                                                                                                                                                                                                                "statusCode": "200"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/U45",
+                                                                                                                                                                                                                                                "statusCode": "200"
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                        "name":"Delete by UserId",
+                                                                                                                                                                                                                                        "data":[
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/UABC731",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/@#$%^",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/67894",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/U10",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/ZXY$#67894",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {					
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/",
+                                                                                                                                                                                                                                                "statusCode": "404"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/{{userId}}",
+                                                                                                                                                                                                                                                "statusCode": "200"
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "Endpoint": "userRoleProgramBatchMap/deleteAll/U38",
+                                                                                                                                                                                                                                                "statusCode": "200"
+                                                                                                                                                                                                                                            }				
+                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "name": "DDH User Logout",
+                                                                                                                                                                                                                                        "data": [
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "status": 404,
+                                                                                                                                                                                                                                                "endpoint": "logoutlms"   
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "status": 401,
+                                                                                                                                                                                                                                                "endpoint": "logoutlms"   
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "status": 405,
+                                                                                                                                                                                                                                                "endpoint": "logoutlms"    
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                "status": 200,
+                                                                                                                                                                                                                                                 "endpoint": "logoutlms"
+                                                                                                                                                                                                                                            }               ]
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                        ]
+                                                                                                                                                                                                                        
